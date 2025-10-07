@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo-symbol-transparent-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo-symbol-transparent-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="images/logo-symbol-transparent.png">
+<link rel="shortcut icon" href="images/logo-symbol-transparent.ico" type="image/x-icon">
     
     <style>
         :root {
@@ -1810,25 +1814,24 @@
     <!-- Loading Screen -->
     <div class="loading-screen" id="loading">
         <div class="loader"></div>
-        <div class="loading-text">Loading Ge8tfit-First...</div>
+        <div class="loading-text"><img src="images/logo-trans-bg.png" alt="Ge8t Logo" class="logo-ge8"style="width: 100px; height: auto;"></div>
     </div>
 
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
             <div class="logo">
-                <span class="logo-ge8">Ge8t</span><span class="logo-fit">fit</span><span class="logo-first">-First</span>
-            </div>
+                <img src="images/logo-trans-bg.png" alt="Ge8t Logo" class="logo-ge8"style="width: 100px; height: auto;">            </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="program.html" class="nav-link">Programs</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#team" class="nav-link">Coaches</a></li>
-                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                
+                <li><a href="index.html" class="nav-link">Coaches</a></li>
+                
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="index.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="mobile-toggle" id="mobileToggle">
                 <span></span>
@@ -1930,8 +1933,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <span class="logo-ge8">Ge8t</span><span class="logo-fit">fit</span><span class="logo-first">-First</span>
-                    </div>
+                        <img src="images/logo-trans-bg.png" alt="Ge8t Logo" class="logo-ge8"style="width: 100px; height: auto;">                    </div>
                     <p style="color: var(--gray-400); margin-bottom: 1rem;">Transforming lives through functional strength training since 1998. Abu Dhabi's premier personal training destination with over 6,800 successful client transformations.</p>
                     <div style="color: var(--gray-400); font-size: 0.9rem;">
                         <p>📍 Abu Dhabi, UAE</p>
@@ -2018,8 +2020,8 @@
                 loading.classList.add('fade-out');
                 setTimeout(() => {
                     loading.style.display = 'none';
-                }, 500);
-            }, 2000);
+                }, 100);
+            }, 500);
         });
 
         // Mobile Menu Toggle
