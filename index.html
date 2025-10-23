@@ -826,7 +826,7 @@
         .client-type-icon {
             width: 60px;
             height: 60px;
-            background: var(--gradient-gold);
+           
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -2186,144 +2186,239 @@
     <!-- Client Types Section -->
     <section class="client-types">
         <div class="container">
-            <div class="section-header fade-in">
+            <!-- Section Header -->
+            <div class="section-header fade-in" style="animation-delay: 0s;">
                 <h2 class="section-title">We Train Everyone</h2>
                 <p class="section-subtitle">From beginners to elite athletes, our programs are designed for every fitness level and lifestyle</p>
             </div>
+            
+            <!-- Client Types Grid -->
             <div class="client-types-grid">
-                <div class="client-type-card fade-in">
-                    <div class="client-type-icon">👔</div>
+                
+                <!-- Card 1: Busy Executives (Clock Icon - Time Efficient) -->
+                <div class="client-type-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="client-type-icon icon-indigo">
+                        <!-- SVG for Clock/Time (New: Matches 'Time-efficient workouts') -->
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM12 6v6l4 2"/>
+                        </svg>
+                    </div>
                     <h3>Busy Executives</h3>
                     <p>Time-efficient workouts designed for business professionals with demanding schedules.</p>
                 </div>
-                <div class="client-type-card fade-in">
-                    <div class="client-type-icon">🏃‍♀️</div>
+
+                <!-- Card 2: Fitness Enthusiasts (Dumbbell Icon - Peak Performance) -->
+                <div class="client-type-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="client-type-icon icon-green">
+                        <!-- SVG for Dumbbell (New: Matches 'Advanced training') -->
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.4 14.4a2 2 0 01-2.83 0L9 12.83a2 2 0 00-2.83 0L3.55 17.45a2 2 0 000 2.83L6.18 22a2 2 0 002.83 0l3.77-3.77a2 2 0 000-2.83l-1.57-1.57z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.4 14.4l3.77-3.77a2 2 0 000-2.83L22 6.18a2 2 0 000-2.83l-2.55-2.55a2 2 0 00-2.83 0L12.83 6.18a2 2 0 000 2.83l1.57 1.57z"/>
+                        </svg>
+                    </div>
                     <h3>Fitness Enthusiasts</h3>
                     <p>Advanced training for those looking to push their limits and achieve peak performance.</p>
                 </div>
-                <div class="client-type-card fade-in">
-                    <div class="client-type-icon">🤱</div>
+
+                <!-- Card 3: New Mothers (Baby/Stroller Icon - Postnatal Fitness) -->
+                <div class="client-type-card fade-in" style="animation-delay: 0.3s;">
+                    <div class="client-type-icon icon-pink">
+                        <!-- SVG for Baby (New: Matches 'postnatal fitness') -->
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="7" r="4"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11v6m0 0l-3-3m3 3l3-3"/>
+                        </svg>
+                    </div>
                     <h3>New Mothers</h3>
                     <p>Safe and effective postnatal fitness programs to help you regain strength and confidence.</p>
                 </div>
-                <div class="client-type-card fade-in">
-                    <div class="client-type-icon">👴</div>
+
+                <!-- Card 4: Active Seniors (Heart Pulse Icon - Mobility/Independence) -->
+                <div class="client-type-card fade-in" style="animation-delay: 0.4s;">
+                    <div class="client-type-icon icon-yellow">
+                        <!-- SVG for Heart Pulse (New: Matches 'maintaining mobility and independence') -->
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14v4a2 2 0 01-2 2H7a2 2 0 01-2-2v-4"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v4"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 2a2 2 0 012-2h0a2 2 0 012 2v2M16 2a2 2 0 012 2v10a2 2 0 01-2 2H8a2 2 0 01-2-2V4a2 2 0 012-2h2"/>
+                        </svg>
+                    </div>
                     <h3>Active Seniors</h3>
                     <p>Gentle yet effective programs focused on maintaining mobility and independence.</p>
                 </div>
-                <div class="client-type-card fade-in">
-                    <div class="client-type-icon">🏆</div>
+                
+                <!-- Card 5: Athletes (Running Man Icon - Sport-specific) -->
+                <div class="client-type-card fade-in" style="animation-delay: 0.5s;">
+                    <div class="client-type-icon icon-red">
+                        <!-- SVG for Running Man (New: Matches 'Sport-specific training') -->
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="4" r="1"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21l-1-7 4-2 3 5 2-1M6 15l2-3 4-2m-8 3h4"/>
+                        </svg>
+                    </div>
                     <h3>Athletes</h3>
                     <p>Sport-specific training programs to enhance performance and competitive edge.</p>
                 </div>
-                <div class="client-type-card fade-in">
-                    <div class="client-type-icon">🎯</div>
+
+                <!-- Card 6: Weight Loss Goals (Scales Icon - Exercise and Nutrition) -->
+                <div class="client-type-card fade-in" style="animation-delay: 0.6s;">
+                    <div class="client-type-icon icon-teal">
+                        <!-- SVG for Scales/Balance (New: Matches 'combining exercise and nutrition') -->
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3h.01M12 12V3m0 0l-3 3m3-3l3 3"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 17h14M8 17h8m-4 0v4"/>
+                        </svg>
+                    </div>
                     <h3>Weight Loss Goals</h3>
                     <p>Comprehensive programs combining exercise and nutrition for sustainable weight loss.</p>
                 </div>
-                <div class="client-type-card fade-in">
-                    <div class="client-type-icon">🩹</div>
+
+                <!-- Card 7: Injury Recovery (First Aid Cross Icon) -->
+                <div class="client-type-card fade-in" style="animation-delay: 0.7s;">
+                    <div class="client-type-icon icon-orange">
+                        <!-- SVG for First Aid/Plus (New: Matches 'Rehabilitation-focused programs') -->
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </div>
                     <h3>Injury Recovery</h3>
                     <p>Rehabilitation-focused programs to help you recover and prevent future injuries.</p>
                 </div>
-                <div class="client-type-card fade-in">
-                    <div class="client-type-icon">👥</div>
+
+                <!-- Card 8: Couples Training (Two Users Icon - Partner Workouts) -->
+                <div class="client-type-card fade-in" style="animation-delay: 0.8s;">
+                    <div class="client-type-icon icon-purple">
+                        <!-- SVG for Two Users (New: Matches 'Partner workouts') -->
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M22 21v-2a4 4 0 00-3-3.87"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 3.13a4 4 0 010 7.74"/>
+                        </svg>
+                    </div>
                     <h3>Couples Training</h3>
                     <p>Partner workouts that make fitness fun and help you stay motivated together.</p>
                 </div>
+
             </div>
         </div>
     </section>
 
+
     <!-- Before/After Transformations -->
-    <section id="testimonials-videos" style="padding: 6rem 0; background: #0A0A0A;">
-        <div class="container" style="max-width: 1200px;">
-            <div class="section-header fade-in" style="text-align: center; margin-bottom: 3rem;">
-                <h2 class="section-title" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 50%, #D4AF37 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Client Video Testimonials</h2>
-                <p class="section-subtitle" style="font-size: 1.25rem; color: #A3A3A3; max-width: 600px; margin: 0 auto;">Watch the transformations from our satisfied clients.</p>
-            </div>
-            
-            <div class="video-flex-container fade-in" 
+<section id="testimonials-videos" style="padding: 6rem 0; background: #0A0A0A;">
+    <div class="container" style="max-width: 1200px;">
+        <div class="section-header fade-in" style="text-align: center; margin-bottom: 3rem;">
+            <h2 class="section-title" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 50%, #D4AF37 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Client Video Testimonials</h2>
+            <p class="section-subtitle" style="font-size: 1.25rem; color: #A3A3A3; max-width: 600px; margin: 0 auto;">Watch the transformations from our satisfied clients.</p>
+        </div>
+
+        <div class="video-flex-container fade-in" 
+             style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px; 
+                margin: 0 auto;
+                box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+                border-radius: 32px;
+                padding: 20px;
+                background: #171717;
+             "
+        >
+
+            <!-- Video 1 -->
+            <div class="video-item" 
                  style="
-                    display: flex;
-                    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-                    justify-content: center;
-                    gap: 20px; 
-                    margin: 0 auto;
-                    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
-                    border-radius: 32px;
-                    padding: 20px;
-                    background: #171717;
+                    flex: 1 1 22%;
+                    min-width: 250px;
+                    background: #262626;
+                    border-radius: 16px; 
+                    overflow: hidden;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
                  "
             >
-                
-                <div class="video-item" 
-                     style="
-                        flex: 1 1 30%; /* Take up 30% width, allowing three side-by-side */
-                        min-width: 250px; /* Minimum width before stacking */
-                        background: #262626;
-                        border-radius: 16px; 
-                        overflow: hidden;
-                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-                     "
-                >
-                    <video src="images/IMG_6828.mp4" controls preload="metadata" 
-                           style="
-                                width: 100%; 
-                                /* Maintain 9:16 vertical aspect ratio */
-                                aspect-ratio: 9 / 16; 
-                                object-fit: cover; 
-                                display: block;
-                           "
-                           poster="images/image.png"
-                    ></video>
-                </div>
-    
-                <div class="video-item" 
-                     style="
-                        flex: 1 1 30%; 
-                        min-width: 250px;
-                        background: #262626;
-                        border-radius: 16px; 
-                        overflow: hidden;
-                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-                     "
-                >
-                    <video src="images/IMG_6836.mp4" controls preload="metadata" 
-                           style="
-                                width: 100%; 
-                                aspect-ratio: 9 / 16; 
-                                object-fit: cover; 
-                                display: block;
-                           "
-                           poster="images/image2.png"
-                    ></video>
-                </div>
-                
-                <div class="video-item" 
-                     style="
-                        flex: 1 1 30%; 
-                        min-width: 250px;
-                        background: #262626;
-                        border-radius: 16px; 
-                        overflow: hidden;
-                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-                     "
-                >
-                    <video src="images/IMG_6834 (1).mp4" controls preload="metadata" 
-                           style="
-                                width: 100%; 
-                                aspect-ratio: 9 / 16; 
-                                object-fit: cover; 
-                                display: block;
-                           "
-                           poster="images/image3.png"
-                    ></video>
-                </div>
-                
+                <video src="images/IMG_6828.mp4" controls preload="metadata" 
+                       style="
+                            width: 100%; 
+                            aspect-ratio: 9 / 16; 
+                            object-fit: cover; 
+                            display: block;
+                       "
+                       poster="images/image.png"
+                ></video>
             </div>
+
+            <!-- Video 2 -->
+            <div class="video-item" 
+                 style="
+                    flex: 1 1 22%;
+                    min-width: 250px;
+                    background: #262626;
+                    border-radius: 16px; 
+                    overflow: hidden;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+                 "
+            >
+                <video src="images/IMG_6836.mp4" controls preload="metadata" 
+                       style="
+                            width: 100%; 
+                            aspect-ratio: 9 / 16; 
+                            object-fit: cover; 
+                            display: block;
+                       "
+                       poster="images/image2.png"
+                ></video>
             </div>
-    </section>
+
+            <!-- Video 3 -->
+            <div class="video-item" 
+                 style="
+                    flex: 1 1 22%;
+                    min-width: 250px;
+                    background: #262626;
+                    border-radius: 16px; 
+                    overflow: hidden;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+                 "
+            >
+                <video src="images/IMG_6834 (1).mp4" controls preload="metadata" 
+                       style="
+                            width: 100%; 
+                            aspect-ratio: 9 / 16; 
+                            object-fit: cover; 
+                            display: block;
+                       "
+                       poster="images/image3.png"
+                ></video>
+            </div>
+
+            <!-- Video 4 (Sample) -->
+            <div class="video-item" 
+                 style="
+                    flex: 1 1 22%;
+                    min-width: 250px;
+                    background: #262626;
+                    border-radius: 16px; 
+                    overflow: hidden;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+                 "
+            >
+                <video src="images/WhatsApp Video 2025-10-20 at 5.22.07 PM.mp4" controls preload="metadata" 
+                       style="
+                            width: 100%; 
+                            aspect-ratio: 9 / 16; 
+                            object-fit: cover; 
+                            display: block;
+                       "
+                       poster="images/Screenshot 2025-10-21 175655.png"
+                ></video>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
     <!-- Facilities Section -->
     <section class="facilities">
@@ -2478,7 +2573,7 @@
                     <p>We specialize in adapting traditional dishes from various cultures into nutritionally optimized versions that support your transformation while maintaining the flavors you love.</p>
                     <a href="#contact" class="btn btn-primary">Get Nutrition Plan</a>
                 </div>
-                <div class="nutrition-image slide-in-right"><img src="images/8412407.jpg" alt="Ge8t Logo" style="max-width: 100%; height: auto; display: block;">
+                <div class="nutrition-image slide-in-right"><img src="images/IMG_6977.png" alt="Ge8t Logo" style="max-width: 100%; height: auto; display: block;">
 </div>
             </div>
             <div class="nutrition-benefits">
@@ -2646,45 +2741,95 @@
     </section>
 
     <!-- Team Section -->
-    <section class="team" id="team">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Meet Our Expert Coaches</h2>
-                <p class="section-subtitle">Our experienced team of certified trainers brings decades of combined expertise to help you achieve your fitness goals</p>
+<section class="team" id="team" style="padding: 4rem 0;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="section-header fade-in" style="text-align: center; margin-bottom: 3rem;">
+            <h2 class="section-title">Meet Our Expert Coaches</h2>
+            <p class="section-subtitle">Our experienced team of certified trainers brings decades of combined expertise to help you achieve your fitness goals</p>
+        </div>
+
+        <!-- ✅ FLEXBOX OR GRID FIX APPLIED HERE -->
+        <div class="team-grid" style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        ">
+            <!-- Trainer 1 -->
+            <div class="trainer-card fade-in" style="
+                flex: 1 1 calc(33.333% - 20px);
+                background: #1a1a1a;
+                color: white;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            ">
+                <div class="trainer-image">
+                    <img src="images/cropped_circle_image (1).png" alt="Emmanuel Lieta" style="width: 100%; border-radius: 50%; margin-bottom: 1rem;">
+                </div>
+                <h3 class="trainer-name">Emmanuel Lieta</h3>
+                <div class="trainer-title">Senior Master Trainer & Founder</div>
+                <p class="trainer-bio">With over 15 years of experience, Emmanuel is one of the most creative and dedicated trainers in Abu Dhabi. He customizes every workout to client goals and constantly adapts exercises to keep things challenging. His expertise has helped thousands achieve incredible transformations in both how they feel and look.</p>
+                <div class="trainer-skills" style="margin-top: 1rem;">
+                    <span class="skill-tag">Functional Strength</span>
+                    <span class="skill-tag">Body Transformation</span>
+                    <span class="skill-tag">Athletic Performance</span>
+                    <span class="skill-tag">Nutrition Coaching</span>
+                </div>
+                <a href="#contact" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Train with Emmanuel</a>
             </div>
-            <div class="team-grid">
-                <div class="trainer-card fade-in">
-                    <div class="trainer-image"><img src="images/cropped_circle_image (1).png" alt="Ge8t Logo" style="max-width: 100%; height: auto; display: block;">
-</div>
-                    <h3 class="trainer-name">Emmanuel Lieta</h3>
-                    <div class="trainer-title">Senior Master Trainer & Founder</div>
-                    <p class="trainer-bio">With over 15 years of experience, Emmanuel is one of the most creative and dedicated trainers in Abu Dhabi. He customizes every workout to client goals and constantly adapts exercises to keep things challenging. His expertise has helped thousands achieve incredible transformations in both how they feel and look. Emmanuel specializes in functional strength training, body transformation, and athletic performance enhancement.</p>
-                    <div class="trainer-skills">
-                        <span class="skill-tag">Functional Strength</span>
-                        <span class="skill-tag">Body Transformation</span>
-                        <span class="skill-tag">Athletic Performance</span>
-                        <span class="skill-tag">Nutrition Coaching</span>
-                    </div>
-                    <a href="#contact" class="btn btn-outline">Train with Emmanuel</a>
+
+            <!-- Trainer 2 -->
+            <div class="trainer-card fade-in" style="
+                flex: 1 1 calc(33.333% - 20px);
+                background: #1a1a1a;
+                color: white;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            ">
+                <div class="trainer-image">
+                    <img src="images/cropped_circle_image.png" alt="Victor Koffi Okongo" style="width: 100%; border-radius: 50%; margin-bottom: 1rem;">
                 </div>
-                
-                <div class="trainer-card fade-in">
-                    <div class="trainer-image"><img src="images/cropped_circle_image.png" alt="Ge8t Logo" style="max-width: 100%; height: auto; display: block;">
-</div>
-                    <h3 class="trainer-name">Victor Koffi Okongo</h3>
-                    <div class="trainer-title">Senior Specialist Trainer</div>
-                    <p class="trainer-bio">Victor brings international experience and systematic approach to personal training. With 12+ years of experience, he specializes in functional bodybuilding and strength development. His patient, methodical approach makes him particularly effective with clients new to fitness or returning after extended breaks. Victor's educational background in exercise science allows him to create programs that are both scientifically sound and highly effective.</p>
-                    <div class="trainer-skills">
-                        <span class="skill-tag">Functional Bodybuilding</span>
-                        <span class="skill-tag">Strength Development</span>
-                        <span class="skill-tag">Beginner Training</span>
-                        <span class="skill-tag">Mobility Work</span>
-                    </div>
-                    <a href="#contact" class="btn btn-outline">Train with Victor</a>
+                <h3 class="trainer-name">Victor Koffi Okongo</h3>
+                <div class="trainer-title">Senior Specialist Trainer</div>
+                <p class="trainer-bio">Victor brings international experience and a systematic approach to personal training. With 12+ years of experience, he specializes in functional bodybuilding and strength development. His patient, methodical approach makes him effective with beginners or those returning after breaks.</p>
+                <div class="trainer-skills" style="margin-top: 1rem;">
+                    <span class="skill-tag">Functional Bodybuilding</span>
+                    <span class="skill-tag">Strength Development</span>
+                    <span class="skill-tag">Beginner Training</span>
+                    <span class="skill-tag">Mobility Work</span>
                 </div>
+                <a href="#contact" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Train with Victor</a>
+            </div>
+
+            <!-- Trainer 3 -->
+            <div class="trainer-card fade-in" style="
+                flex: 1 1 calc(33.333% - 20px);
+                background: #1a1a1a;
+                color: white;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            ">
+                <div class="trainer-image">
+                    <img src="images/cropped_circle_image3.png" alt="Tristan William McRae" style="width: 100%; border-radius: 50%; margin-bottom: 1rem;">
+                </div>
+                <h3 class="trainer-name">Tristan William McRae</h3>
+                <div class="trainer-title">Level 3 Personal Trainer & Sports Nutritionist</div>
+                <p class="trainer-bio">Tristan is a competitive bodybuilder (IFBB) and a dynamic trainer currently pursuing his Advanced Certificate in Exercise Science (ACES). He combines deep knowledge of body composition, strength, and performance training to help clients achieve serious results — both in-person and online.</p>
+                <div class="trainer-skills" style="margin-top: 1rem;">
+                    <span class="skill-tag">Bodybuilding (IFBB)</span>
+                    <span class="skill-tag">Body Composition</span>
+                    <span class="skill-tag">Strength Training</span>
+
+                </div>
+                <a href="#contact" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Train with Tristan</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Extended Testimonials Section -->
     <section class="testimonials" id="testimonials">
@@ -2847,107 +2992,162 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Ready to Transform Your Life?</h2>
-                <p class="section-subtitle">Join thousands of satisfied clients who have achieved their fitness goals with Ge8tfit-First. Your transformation starts with a single message.</p>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Ready to Transform Your Life?</h2>
+            <p class="section-subtitle">Join thousands of satisfied clients who have achieved their fitness goals with Ge8tfit-First. Your transformation starts with a single message.</p>
+        </div>
+
+        <div class="contact-content">
+            <!-- Contact Form -->
+            <div class="contact-form slide-in-left">
+                <h3 style="color: var(--white); margin-bottom: 2rem;">Start Your Journey Today</h3>
+                
+                <!-- Form posts to Web3Forms -->
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                    <!-- Your API Access Key -->
+                    <input type="hidden" name="access_key" value="c8855c59-3159-48e8-a636-342d3565ac54" />
+
+                    <!-- The email where replies should go -->
+                    <input type="hidden" name="replyto" value="therealmsco@gmail.com" />
+
+                    <!-- Optional redirect after successful submit -->
+                    <!-- <input type="hidden" name="redirect" value="https://ge8tfit.com/thank-you.html" /> -->
+
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-input" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-input" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="service" class="form-label">Preferred Service *</label>
+                        <select id="service" name="service" class="form-select" required>
+                            <option value="">Select your service</option>
+                            <option value="gym-training">Gym Personal Training ($108/session)</option>
+                            <option value="home-training">Home Personal Training ($136/session)</option>
+                            <option value="online-training">Online Personal Training ($682/2 months)</option>
+                            <option value="meal-plans">Custom Meal Plans</option>
+                            <option value="programs">Specialized Training Programs</option>
+                            <option value="consultation">Free Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="goals" class="form-label">Your Fitness Goals</label>
+                        <textarea id="goals" name="goals" class="form-textarea" placeholder="Tell us about your fitness goals, current challenges, and what you want to achieve..."></textarea>
+                    </div>
+
+                    <!-- Success & error messages -->
+                    <div id="form-alert" style="display:none; margin-top:1rem;"></div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Start Your Transformation</button>
+                </form>
             </div>
-            <div class="contact-content">
-                <div class="contact-form slide-in-left">
-                    <h3 style="color: var(--white); margin-bottom: 2rem;">Start Your Journey Today</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Full Name *</label>
-                            <input type="text" id="name" name="name" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email Address *</label>
-                            <input type="email" id="email" name="email" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service" class="form-label">Preferred Service *</label>
-                            <select id="service" name="service" class="form-select" required>
-                                <option value="">Select your service</option>
-                                <option value="gym-training">Gym Personal Training ($108/session)</option>
-                                <option value="home-training">Home Personal Training ($136/session)</option>
-                                <option value="online-training">Online Personal Training ($682/2 months)</option>
-                                <option value="meal-plans">Custom Meal Plans</option>
-                                <option value="programs">Specialized Training Programs</option>
-                                <option value="consultation">Free Consultation</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="goals" class="form-label">Your Fitness Goals</label>
-                            <textarea id="goals" name="goals" class="form-textarea" placeholder="Tell us about your fitness goals, current challenges, and what you want to achieve..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Start Your Transformation</button>
-                    </form>
+
+            <!-- Contact Info -->
+            <div class="contact-info slide-in-right">
+                <h3>Get In Touch</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Phone / WhatsApp</div>
+                        <div style="color: var(--gray-400);">+971556879614</div>
+                    </div>
                 </div>
-                <div class="contact-info slide-in-right">
-                    <h3>Get In Touch</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Phone / WhatsApp</div>
-                            <div style="color: var(--gray-400);">+971556879614</div>
-                        </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Email</div>
+                        <div style="color: var(--gray-400);">info@ge8tfit.com</div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
-                        <div>
-                            <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Email</div>
-                            <div style="color: var(--gray-400);">info@ge8tfit.com</div>
-                        </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Location</div>
+                        <div style="color: var(--gray-400);">Abu Dhabi, UAE</div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Location</div>
-                            <div style="color: var(--gray-400);">Abu Dhabi, UAE</div>
-                        </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Experience</div>
+                        <div style="color: var(--gray-400);">26+ Years Since 1998</div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">⏰</div>
-                        <div>
-                            <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Experience</div>
-                            <div style="color: var(--gray-400);">26+ Years Since 1998</div>
-                        </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🏆</div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Success Rate</div>
+                        <div style="color: var(--gray-400);">6,832+ Transformations</div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🏆</div>
-                        <div>
-                            <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Success Rate</div>
-                            <div style="color: var(--gray-400);">6,832+ Transformations</div>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/people/Ge8fit-first/61569242152095/" class="social-link">📘</a>
-                        <a href="https://www.instagram.com/ge8fit_first1/" class="social-link">📷</a>
-                        <a href="https://www.youtube.com/@Ge8fitfirst" class="social-link">📺</a>
-                        <a href="https://web.whatsapp.com/send?phone=971556879614" class="social-link">💬</a>
-                        <a href="https://calendly.com/ge8tfit-first-info/30min" class="social-link">📅</a>
-                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Ge8fit-first/61569242152095/" class="social-link">📘</a>
+                    <a href="https://www.instagram.com/ge8fit_first1/" class="social-link">📷</a>
+                    <a href="https://www.youtube.com/@Ge8fitfirst" class="social-link">📺</a>
+                    <a href="https://web.whatsapp.com/send?phone=971556879614" class="social-link">💬</a>
+                    <a href="https://calendly.com/ge8tfit-first-info/30min" class="social-link">📅</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Optional JS to show success/error messages -->
+<script>
+  const form = document.getElementById("contactForm");
+  const alertBox = document.getElementById("form-alert");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { Accept: "application/json" }
+    }).then(response => {
+      if (response.ok) {
+        alertBox.style.display = "block";
+        alertBox.style.color = "green";
+        alertBox.textContent = "Thank you! Your message has been sent.";
+        form.reset();
+      } else {
+        alertBox.style.display = "block";
+        alertBox.style.color = "red";
+        alertBox.textContent = "Oops! Something went wrong. Please try again.";
+      }
+    }).catch(() => {
+      alertBox.style.display = "block";
+      alertBox.style.color = "red";
+      alertBox.textContent = "Oops! Something went wrong. Please try again.";
+    });
+  });
+</script>
+
+
 
     <!-- Map Section -->
 <section class="map-section">
   <div class="container">
     <div class="section-header fade-in">
       <h2 class="section-title">Visit Our Location</h2>
-      <p class="section-subtitle">Located in the heart of Abu Dhabi, easily accessible from all major areas</p>
+      <p class="section-subtitle">Located in the heart of Abu Dhabi,Galleria Mall. easily accessible from all major areas</p>
     </div>
 
     <div class="map-container fade-in" style="width: 100%; height: 400px; border-radius: 12px; overflow: hidden;">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14438.732821194896!2d54.3666699!3d24.4670985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e65a2f13a3b2f%3A0x6b7e5dcb40c1c9e!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1739025600000!5m2!1sen!2sin"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14438.732821194896!2d54.390672!3d24.501026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e65d872d3d1a3%3A0x0!2sThe%20Galleria%20Al%20Maryah%20Island!5e0!3m2!1sen!2sin!4v1739025600000!5m2!1sen!2sin"
         width="100%"
         height="100%"
         style="border:0;"
@@ -2961,18 +3161,92 @@
 
 
     <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Stay Connected</h2>
-                <p class="section-subtitle">Subscribe to our newsletter for fitness tips, workout ideas, and exclusive offers</p>
-            </div>
-            <form class="newsletter-form fade-in">
-                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-        </div>
-    </section>
+<section class="newsletter">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="section-title">Stay Connected</h2>
+      <p class="section-subtitle">
+        Subscribe to our newsletter for fitness tips, workout ideas, and exclusive offers
+      </p>
+    </div>
+
+    <!-- Updated Web3Forms Newsletter Form -->
+    <form
+      class="newsletter-form fade-in"
+      id="newsletterForm"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+    >
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="c8855c59-3159-48e8-a636-342d3565ac54" />
+
+      <!-- Reply-to Email -->
+      <input type="hidden" name="replyto" value="therealmsco@gmail.com" />
+
+      <!-- Email Subject -->
+      <input type="hidden" name="subject" value="New Newsletter Subscription Request" />
+
+      <!-- Email Input -->
+      <input
+        type="email"
+        name="email"
+        class="newsletter-input"
+        placeholder="Enter your email address"
+        required
+      />
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+
+    <!-- Success/Error Message -->
+    <div id="formMessage" class="form-message hidden"></div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById("newsletterForm");
+  const messageBox = document.getElementById("formMessage");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    messageBox.textContent = "Submitting...";
+    messageBox.classList.remove("hidden");
+    messageBox.style.color = "#555";
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData
+      });
+      const result = await response.json();
+
+      if (response.ok) {
+        messageBox.textContent = "✅ Thank you for subscribing!";
+        messageBox.style.color = "green";
+        form.reset();
+      } else {
+        messageBox.textContent = "❌ " + (result.message || "Something went wrong!");
+        messageBox.style.color = "red";
+      }
+    } catch (error) {
+      messageBox.textContent = "❌ Network error. Please try again later.";
+      messageBox.style.color = "red";
+    }
+  });
+</script>
+
+<style>
+  .form-message {
+    margin-top: 15px;
+    font-size: 0.95rem;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -2989,29 +3263,7 @@
                         <p>✉️ info@ge8tfit.com</p>
                     </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h3>Training Services</h3>
-                    <ul>
-                        <li><a href="#services">Gym Personal Training</a></li>
-                        <li><a href="#services">Home Personal Training</a></li>
-                        <li><a href="#services">Online Personal Training</a></li>
-                        <li><a href="#services">Custom Meal Plans</a></li>
-                        <li><a href="#contact">Free Consultation</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Training Programs</h3>
-                    <ul>
-                        <li><a href="#programs">Functional Strength Training</a></li>
-                        <li><a href="#programs">Weight Loss Transformation</a></li>
-                        <li><a href="#programs">Functional Bodybuilding</a></li>
-                        <li><a href="#programs">Mobility & Rehabilitation</a></li>
-                        <li><a href="#programs">HIIT Programs</a></li>
-                        <li><a href="#programs">Natural BBL Workout</a></li>
-                    </ul>
-                </div>
+
 
                 <div class="footer-section">
                     <h3>Client Categories</h3>
@@ -3024,17 +3276,7 @@
                     </ul>
                 </div>
                 
-                <div class="footer-section">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#team">Our Coaches</a></li>
-                        <li><a href="#testimonials">Success Stories</a></li>
-                        <li><a href="#blog">Fitness Blog</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
+
 
                 <div class="footer-section">
                     <h3>Resources</h3>
