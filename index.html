@@ -1832,7 +1832,7 @@
                 <li><a href="#team" class="nav-link">Coaches</a></li>
                
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="mobile-toggle" id="mobileToggle">
                 <span></span>
@@ -2720,27 +2720,24 @@
     </section>
 
     <!-- About Secion -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image slide-in-left">
-                    <!-- Placeholder image to be replaced -->
-                    <img src="images/GE8FIT PHOTO_33.jpg" alt="Ge8tfit Training" style="max-width: 100%; height: auto; display: block;">
-
-                </div>
-                <div class="about-text slide-in-right">
-                    <div class="since-badge">Since 1998 - 26+ Years of Excellence<br></div>
-                    <h2>Transform Your Mindset, Transform Your Body</h2>
-                    <p>With over 26 years of experience in functional strength training, Ge8tfit-First has been Abu Dhabi's premier personal training destination since 1998. We have successfully transformed the lives of over 6,800 clients through our proven methodologies.</p>
-                    <p>Our expert trainers craft personalized workout plans tailored to your unique needs, helping you stay focused and energized. Whether you're looking for gym training, home sessions, or online coaching, we provide the dedicated support you need to achieve your fitness goals.</p>
-                    <p>We believe in making fitness accessible, enjoyable, and sustainable for everyone. Our approach combines traditional strength training with functional movements that improve your daily life performance and long-term health.<br></p>
-                    
-                </div>
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image slide-in-left">
+                <img src="images/GE8FIT PHOTO_33.jpg" alt="Ge8tfit Training" style="max-width: 100%; height: auto; display: block;">
+            </div>
+            <div class="about-text slide-in-right">
+                <div class="since-badge">Since 1998 - 26+ Years of Excellence<br></div>
+                <h2>Transform Your Mindset, Transform Your Body</h2>
+                <p>With over 26 years of experience in functional strength training, Ge8tfit-First has been Abu Dhabi's premier personal training destination since 1998. We have successfully transformed the lives of over 6,800 clients through our proven methodologies.</p>
+                <p>Our expert trainers craft personalized workout plans tailored to your unique needs, helping you stay focused and energized. Whether you're looking for gym training, home sessions, or online coaching, we provide the dedicated support you need to achieve your fitness goals.</p>
+                <p>We believe in making fitness accessible, enjoyable, and sustainable for everyone. Our approach combines traditional strength training with functional movements that improve your daily life performance and long-term health.<br></p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Team Section -->
+<!-- Team Section -->
 <section class="team" id="team" style="padding: 4rem 0;">
     <div class="container" style="max-width: 1200px; margin: 0 auto;">
         <div class="section-header fade-in" style="text-align: center; margin-bottom: 3rem;">
@@ -2748,24 +2745,25 @@
             <p class="section-subtitle">Our experienced team of certified trainers brings decades of combined expertise to help you achieve your fitness goals</p>
         </div>
 
-        <!-- ✅ FLEXBOX OR GRID FIX APPLIED HERE -->
+        <!-- ✅ GRID LAYOUT UPDATED FOR 2x2 -->
         <div class="team-grid" style="
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            justify-content: center;
+            align-items: stretch;
         ">
             <!-- Trainer 1 -->
             <div class="trainer-card fade-in" style="
-                flex: 1 1 calc(33.333% - 20px);
                 background: #1a1a1a;
                 color: white;
                 padding: 2rem;
                 border-radius: 12px;
                 box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+                text-align: center;
             ">
                 <div class="trainer-image">
-                    <img src="images/cropped_circle_image (1).png" alt="Emmanuel Lieta" style="width: 100%; border-radius: 50%; margin-bottom: 1rem;">
+                    <img src="images/cropped_circle_image (1).png" alt="Emmanuel Lieta" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover;">
                 </div>
                 <h3 class="trainer-name">Emmanuel Lieta</h3>
                 <div class="trainer-title">Senior Master Trainer & Founder</div>
@@ -2781,15 +2779,15 @@
 
             <!-- Trainer 2 -->
             <div class="trainer-card fade-in" style="
-                flex: 1 1 calc(33.333% - 20px);
                 background: #1a1a1a;
                 color: white;
                 padding: 2rem;
                 border-radius: 12px;
                 box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+                text-align: center;
             ">
                 <div class="trainer-image">
-                    <img src="images/cropped_circle_image.png" alt="Victor Koffi Okongo" style="width: 100%; border-radius: 50%; margin-bottom: 1rem;">
+                    <img src="images/cropped_circle_image.png" alt="Victor Koffi Okongo" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover;">
                 </div>
                 <h3 class="trainer-name">Victor Koffi Okongo</h3>
                 <div class="trainer-title">Senior Specialist Trainer</div>
@@ -2798,22 +2796,21 @@
                     <span class="skill-tag">Functional Bodybuilding</span>
                     <span class="skill-tag">Strength Development</span>
                     <span class="skill-tag">Beginner Training</span>
-                    <span class="skill-tag">Mobility Work</span>
                 </div>
                 <a href="#contact" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Train with Victor</a>
             </div>
 
             <!-- Trainer 3 -->
             <div class="trainer-card fade-in" style="
-                flex: 1 1 calc(33.333% - 20px);
                 background: #1a1a1a;
                 color: white;
                 padding: 2rem;
                 border-radius: 12px;
                 box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+                text-align: center;
             ">
                 <div class="trainer-image">
-                    <img src="images/cropped_circle_image3.png" alt="Tristan William McRae" style="width: 100%; border-radius: 50%; margin-bottom: 1rem;">
+                    <img src="images/cropped_circle_image3.png" alt="Tristan William McRae" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover;">
                 </div>
                 <h3 class="trainer-name">Tristan William McRae</h3>
                 <div class="trainer-title">Level 3 Personal Trainer & Sports Nutritionist</div>
@@ -2822,13 +2819,37 @@
                     <span class="skill-tag">Bodybuilding (IFBB)</span>
                     <span class="skill-tag">Body Composition</span>
                     <span class="skill-tag">Strength Training</span>
-
                 </div>
                 <a href="#contact" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Train with Tristan</a>
+            </div>
+
+            <!-- Trainer 4 -->
+            <div class="trainer-card fade-in" style="
+                background: #1a1a1a;
+                color: white;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+                text-align: center;
+            ">
+                <div class="trainer-image">
+                    <img src="images/cropped_circle_image4.png" alt="Sarah Johnson" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover;">
+                </div>
+                <h3 class="trainer-name">Sarah Johnson</h3>
+                <div class="trainer-title">Certified Fitness & Mobility Coach</div>
+                <p class="trainer-bio">Sarah specializes in mobility, flexibility, and recovery-focused training. With 10+ years of experience, she helps clients improve movement quality, posture, and body balance while building sustainable strength and endurance.</p>
+                <div class="trainer-skills" style="margin-top: 1rem;">
+                    <span class="skill-tag">Mobility Training</span>
+                    <span class="skill-tag">Flexibility</span>
+                    <span class="skill-tag">Recovery Workouts</span>
+                    <span class="skill-tag">Posture Correction</span>
+                </div>
+                <a href="#contact" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Train with Sarah</a>
             </div>
         </div>
     </div>
 </section>
+
 
 
     <!-- Extended Testimonials Section -->
@@ -2992,115 +3013,7 @@
     </section>
 
     <!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="container">
-        <div class="section-header fade-in">
-            <h2 class="section-title">Ready to Transform Your Life?</h2>
-            <p class="section-subtitle">Join thousands of satisfied clients who have achieved their fitness goals with Ge8tfit-First. Your transformation starts with a single message.</p>
-        </div>
 
-        <div class="contact-content">
-            <!-- Contact Form -->
-            <div class="contact-form slide-in-left">
-                <h3 style="color: var(--white); margin-bottom: 2rem;">Start Your Journey Today</h3>
-                
-                <!-- Form posts to Web3Forms -->
-                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-                    <!-- Your API Access Key -->
-                    <input type="hidden" name="access_key" value="c8855c59-3159-48e8-a636-342d3565ac54" />
-
-                    <!-- The email where replies should go -->
-                    <input type="hidden" name="replyto" value="therealmsco@gmail.com" />
-
-                    <!-- Optional redirect after successful submit -->
-                    <!-- <input type="hidden" name="redirect" value="https://ge8tfit.com/thank-you.html" /> -->
-
-                    <div class="form-group">
-                        <label for="name" class="form-label">Full Name *</label>
-                        <input type="text" id="name" name="name" class="form-input" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email Address *</label>
-                        <input type="email" id="email" name="email" class="form-input" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="phone" class="form-label">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" class="form-input" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="service" class="form-label">Preferred Service *</label>
-                        <select id="service" name="service" class="form-select" required>
-                            <option value="">Select your service</option>
-                            <option value="gym-training">Gym Personal Training ($108/session)</option>
-                            <option value="home-training">Home Personal Training ($136/session)</option>
-                            <option value="online-training">Online Personal Training ($682/2 months)</option>
-                            <option value="meal-plans">Custom Meal Plans</option>
-                            <option value="programs">Specialized Training Programs</option>
-                            <option value="consultation">Free Consultation</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="goals" class="form-label">Your Fitness Goals</label>
-                        <textarea id="goals" name="goals" class="form-textarea" placeholder="Tell us about your fitness goals, current challenges, and what you want to achieve..."></textarea>
-                    </div>
-
-                    <!-- Success & error messages -->
-                    <div id="form-alert" style="display:none; margin-top:1rem;"></div>
-
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Start Your Transformation</button>
-                </form>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="contact-info slide-in-right">
-                <h3>Get In Touch</h3>
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Phone / WhatsApp</div>
-                        <div style="color: var(--gray-400);">+971556879614</div>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Email</div>
-                        <div style="color: var(--gray-400);">info@ge8tfit.com</div>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Location</div>
-                        <div style="color: var(--gray-400);">Abu Dhabi, UAE</div>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">⏰</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Experience</div>
-                        <div style="color: var(--gray-400);">26+ Years Since 1998</div>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">🏆</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--white); margin-bottom: 0.25rem;">Success Rate</div>
-                        <div style="color: var(--gray-400);">6,832+ Transformations</div>
-                    </div>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://www.facebook.com/people/Ge8fit-first/61569242152095/" class="social-link">📘</a>
-                    <a href="https://www.instagram.com/ge8fit_first1/" class="social-link">📷</a>
-                    <a href="https://www.youtube.com/@Ge8fitfirst" class="social-link">📺</a>
-                    <a href="https://web.whatsapp.com/send?phone=971556879614" class="social-link">💬</a>
-                    <a href="https://calendly.com/ge8tfit-first-info/30min" class="social-link">📅</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Optional JS to show success/error messages -->
 <script>
