@@ -8,7 +8,7 @@
     <!-- Google Fonts - Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo-symbol-transparent-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/logo-symbol-transparent-32x32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="images/logo-symbol-transparent.png">
@@ -16,34 +16,34 @@
     
     <style>
         :root {
-            --primary-gold: #D4AF37;
-            --gold-light: #F4E4BC;
-            --gold-dark: #B8941F;
-            --black: #0A0A0A;
-            --white: #FFFFFF;
-            --gray-100: #F5F5F5;
-            --gray-200: #E5E5E5;
-            --gray-300: #D4D4D4;
-            --gray-400: #A3A3A3;
-            --gray-500: #737373;
-            --gray-600: #525252;
-            --gray-700: #404040;
-            --gray-800: #262626;
-            --gray-900: #171717;
+            --primary-gold: #7f986b;
+            --gold-light: #a6b49a;
+            --gold-dark: #55654d;
+            --black: #0d120f;
+            --white: #ecf0ea;
+            --gray-100: #d7ded6;
+            --gray-200: #bdc7bc;
+            --gray-300: #9da89a;
+            --gray-400: #7f8b7d;
+            --gray-500: #667162;
+            --gray-600: #4f5a4c;
+            --gray-700: #3b4539;
+            --gray-800: #263025;
+            --gray-900: #182019;
             
-            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 50%, #D4AF37 100%);
-            --gradient-dark: linear-gradient(135deg, #0A0A0A 0%, #171717 100%);
-            --gradient-overlay: linear-gradient(135deg, rgba(10, 10, 10, 0.8) 0%, rgba(23, 23, 23, 0.6) 100%);
+            --gradient-gold: linear-gradient(135deg, #5c6957 0%, #9dac98 52%, #6f8069 100%);
+            --gradient-dark: linear-gradient(135deg, #0d120f 0%, #1c261d 50%, #121813 100%);
+            --gradient-overlay: linear-gradient(135deg, rgba(13, 18, 15, 0.86) 0%, rgba(31, 40, 31, 0.62) 100%);
             
-            --shadow-gold: 0 10px 25px rgba(212, 175, 55, 0.3);
+            --shadow-gold: 0 10px 25px rgba(127, 152, 107, 0.34);
             --shadow-dark: 0 10px 25px rgba(0, 0, 0, 0.5);
-            --shadow-premium: 0 20px 40px rgba(212, 175, 55, 0.15);
+            --shadow-premium: 0 20px 40px rgba(127, 152, 107, 0.2);
             
             --border-radius: 16px;
             --border-radius-lg: 24px;
             --border-radius-xl: 32px;
             
-            --font-main: 'Poppins', sans-serif;
+            --font-main: 'Rajdhani', sans-serif;
             
             --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,7 +65,8 @@
             font-family: var(--font-main);
             line-height: 1.6;
             color: var(--white);
-            background: var(--black);
+            background-color: var(--black);
+            background-image: radial-gradient(circle at 18% 20%, rgba(90, 112, 80, 0.16) 0, rgba(90, 112, 80, 0) 46%), radial-gradient(circle at 82% 10%, rgba(128, 136, 128, 0.18) 0, rgba(128, 136, 128, 0) 42%), radial-gradient(circle at 30% 80%, rgba(58, 74, 56, 0.22) 0, rgba(58, 74, 56, 0) 48%);
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -204,14 +205,14 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: rgba(10, 10, 10, 0.95);
+            background: rgba(13, 18, 15, 0.95);
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            border-bottom: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
         }
 
         .header.scrolled {
-            background: rgba(10, 10, 10, 0.98);
+            background: rgba(13, 18, 15, 0.98);
             box-shadow: var(--shadow-dark);
         }
 
@@ -315,9 +316,9 @@
             height: 100%;
             background: linear-gradient(
                 135deg,
-                rgba(10, 10, 10, 0.7) 0%,
-                rgba(212, 175, 55, 0.1) 50%,
-                rgba(10, 10, 10, 0.8) 100%
+                rgba(13, 18, 15, 0.7) 0%,
+                rgba(127, 152, 107, 0.1) 50%,
+                rgba(13, 18, 15, 0.8) 100%
             ),
             url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
@@ -336,8 +337,8 @@
         .hero-badge {
             display: inline-block;
             padding: 0.75rem 2rem;
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: rgba(127, 152, 107, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.3);
             border-radius: 50px;
             font-size: 0.875rem;
             font-weight: 600;
@@ -491,7 +492,7 @@
             position: relative;
             overflow: hidden;
             transition: all var(--transition-normal);
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
         }
 
         .service-card::before {
@@ -501,7 +502,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(127, 152, 107, 0.1), transparent);
             transition: left var(--transition-slow);
         }
 
@@ -512,7 +513,7 @@
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-premium);
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
         }
 
         .service-icon {
@@ -563,7 +564,7 @@
         }
 
         .service-features li::before {
-            content: '✓';
+            content: '\2713';
             position: absolute;
             left: 0;
             color: var(--primary-gold);
@@ -626,7 +627,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(to top, rgba(10, 10, 10, 0.8), transparent);
+            background: linear-gradient(to top, rgba(13, 18, 15, 0.8), transparent);
             display: flex;
             align-items: flex-end;
             padding: 1.5rem;
@@ -663,10 +664,10 @@
         }
 
         .program-card {
-            background: rgba(23, 23, 23, 0.8);
+            background: rgba(28, 38, 29, 0.8);
             border-radius: var(--border-radius-lg);
             padding: 3rem;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
             position: relative;
             overflow: hidden;
@@ -674,7 +675,7 @@
 
         .program-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
             box-shadow: var(--shadow-gold);
         }
 
@@ -693,7 +694,7 @@
 
         .program-duration {
             display: inline-block;
-            background: rgba(212, 175, 55, 0.1);
+            background: rgba(127, 152, 107, 0.1);
             color: var(--primary-gold);
             padding: 0.5rem 1rem;
             border-radius: var(--border-radius);
@@ -720,7 +721,7 @@
             border-radius: var(--border-radius-xl);
             padding: 3rem;
             text-align: center;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
             position: relative;
         }
@@ -747,7 +748,7 @@
 
         .pricing-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
         }
 
         .pricing-card.featured:hover {
@@ -790,7 +791,7 @@
         }
 
         .pricing-features li::before {
-            content: '✓';
+            content: '\2713';
             color: var(--primary-gold);
             font-weight: bold;
             margin-right: 1rem;
@@ -809,17 +810,17 @@
         }
 
         .client-type-card {
-            background: rgba(23, 23, 23, 0.8);
+            background: rgba(28, 38, 29, 0.8);
             border-radius: var(--border-radius-lg);
             padding: 2rem;
             text-align: center;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
         }
 
         .client-type-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
             box-shadow: var(--shadow-gold);
         }
 
@@ -865,7 +866,7 @@
             border-radius: var(--border-radius-xl);
             padding: 3rem;
             text-align: center;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
         }
 
         .before-after-images {
@@ -943,16 +944,16 @@
         }
 
         .facility-card {
-            background: rgba(23, 23, 23, 0.8);
+            background: rgba(28, 38, 29, 0.8);
             border-radius: var(--border-radius-lg);
             overflow: hidden;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
         }
 
         .facility-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
         }
 
         .facility-image {
@@ -995,7 +996,7 @@
         }
 
         .facility-features li::before {
-            content: '•';
+            content: '\2022';
             color: var(--primary-gold);
             position: absolute;
             left: 0;
@@ -1019,12 +1020,12 @@
             border-radius: var(--border-radius);
             padding: 2rem;
             text-align: center;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
         }
 
         .equipment-item:hover {
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
             transform: translateY(-5px);
         }
 
@@ -1096,10 +1097,10 @@
         }
 
         .benefit-card {
-            background: rgba(23, 23, 23, 0.8);
+            background: rgba(28, 38, 29, 0.8);
             border-radius: var(--border-radius);
             padding: 2rem;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
         }
 
         .benefit-card h3 {
@@ -1172,10 +1173,10 @@
         }
 
         .faq-item {
-            background: rgba(23, 23, 23, 0.8);
+            background: rgba(28, 38, 29, 0.8);
             border-radius: var(--border-radius);
             margin-bottom: 1rem;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             overflow: hidden;
         }
 
@@ -1189,7 +1190,7 @@
         }
 
         .faq-question:hover {
-            background: rgba(23, 23, 23, 1);
+            background: rgba(28, 38, 29, 1);
         }
 
         .faq-question h3 {
@@ -1241,14 +1242,14 @@
             border-radius: var(--border-radius-xl);
             padding: 3rem;
             text-align: center;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
         }
 
         .trainer-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-premium);
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
         }
 
         .trainer-image {
@@ -1293,7 +1294,7 @@
         }
 
         .skill-tag {
-            background: rgba(212, 175, 55, 0.1);
+            background: rgba(127, 152, 107, 0.1);
             color: var(--primary-gold);
             padding: 0.5rem 1rem;
             border-radius: 50px;
@@ -1314,19 +1315,19 @@
         }
 
         .testimonial-card {
-            background: rgba(23, 23, 23, 0.8);
+            background: rgba(28, 38, 29, 0.8);
             border-radius: var(--border-radius-lg);
             padding: 3rem;
             text-align: center;
             position: relative;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
         }
 
         .testimonial-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-premium);
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
         }
 
         .testimonial-quote {
@@ -1385,13 +1386,13 @@
             background: var(--gradient-dark);
             border-radius: var(--border-radius-xl);
             overflow: hidden;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-normal);
         }
 
         .blog-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(127, 152, 107, 0.3);
             box-shadow: var(--shadow-premium);
         }
 
@@ -1458,10 +1459,10 @@
         }
 
         .contact-form {
-            background: rgba(23, 23, 23, 0.8);
+            background: rgba(28, 38, 29, 0.8);
             border-radius: var(--border-radius-xl);
             padding: 3rem;
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
         }
 
         .form-group {
@@ -1481,7 +1482,7 @@
             width: 100%;
             padding: 1rem;
             background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(212, 175, 55, 0.2);
+            border: 2px solid rgba(127, 152, 107, 0.2);
             border-radius: var(--border-radius);
             color: var(--white);
             font-family: var(--font-main);
@@ -1494,7 +1495,7 @@
             outline: none;
             border-color: var(--primary-gold);
             background: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+            box-shadow: 0 0 0 3px rgba(127, 152, 107, 0.1);
         }
 
         .form-textarea {
@@ -1515,15 +1516,15 @@
             gap: 1rem;
             margin-bottom: 2rem;
             padding: 1.5rem;
-            background: rgba(23, 23, 23, 0.5);
+            background: rgba(28, 38, 29, 0.5);
             border-radius: var(--border-radius);
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.1);
             transition: all var(--transition-fast);
         }
 
         .contact-item:hover {
-            border-color: rgba(212, 175, 55, 0.3);
-            background: rgba(23, 23, 23, 0.8);
+            border-color: rgba(127, 152, 107, 0.3);
+            background: rgba(28, 38, 29, 0.8);
         }
 
         .contact-icon {
@@ -1575,7 +1576,7 @@
             flex: 1;
             padding: 1rem;
             background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(212, 175, 55, 0.2);
+            border: 2px solid rgba(127, 152, 107, 0.2);
             border-radius: var(--border-radius);
             color: var(--white);
             font-family: var(--font-main);
@@ -1590,7 +1591,7 @@
         .footer {
             background: var(--black);
             padding: 6rem 0 2rem;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            border-top: 1px solid rgba(127, 152, 107, 0.1);
         }
 
         .footer-content {
@@ -1640,8 +1641,8 @@
         .social-link {
             width: 50px;
             height: 50px;
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: rgba(127, 152, 107, 0.1);
+            border: 1px solid rgba(127, 152, 107, 0.3);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -1660,7 +1661,7 @@
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            border-top: 1px solid rgba(127, 152, 107, 0.1);
             color: var(--gray-500);
             font-size: 0.875rem;
         }
@@ -1738,7 +1739,7 @@
                 left: 0;
                 width: 100%;
                 height: 100vh;
-                background: rgba(10, 10, 10, 0.98);
+                background: rgba(13, 18, 15, 0.98);
                 backdrop-filter: blur(20px);
                 flex-direction: column;
                 justify-content: center;
@@ -1808,6 +1809,25 @@
                 font-size: 2.5rem;
             }
         }
+    
+        .footer-resources .doc-link {
+            color: var(--gray-100);
+            border: 1px solid rgba(127, 152, 107, 0.45);
+            background: linear-gradient(135deg, rgba(95, 112, 89, 0.35) 0%, rgba(38, 48, 37, 0.6) 100%);
+            padding: 0.45rem 0.7rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 0.35rem;
+            text-decoration: none;
+            transition: all var(--transition-fast);
+        }
+
+        .footer-resources .doc-link:hover {
+            color: var(--white);
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 0 1px rgba(127, 152, 107, 0.35);
+            transform: translateY(-1px);
+        }
     </style>
 </head>
 <body>
@@ -1859,7 +1879,7 @@
             <div class="services-grid">
                 <div class="service-card fade-in">
                     <div class="service-badge">Recommended</div>
-                    <div class="service-icon">🏋️</div>
+                    <div class="service-icon"></div>
                     <h3 class="service-title">Gym Personal Training</h3>
                     <p class="service-description">Exclusive Coaching for Unmatched Results and Personalized Wellness. Train with the Elite: Join those who redefine limits and enjoy a customized approach that pushes the boundaries of fitness.</p>
                     <div class="service-price">$108<span style="font-size: 1rem; color: var(--gray-400);">/session</span></div>
@@ -1875,7 +1895,7 @@
                 </div>
                 
                 <div class="service-card fade-in">
-                    <div class="service-icon">🏠</div>
+                    <div class="service-icon"></div>
                     <h3 class="service-title">Home Personal Training</h3>
                     <p class="service-description">Transform Your Space, Transform Your Life: Fitness at Home, Tailored for You. Convenient Access: Experience diverse workout styles delivered to your doorstep by elite trainers using cutting-edge skills and equipment.</p>
                     <div class="service-price">$136<span style="font-size: 1rem; color: var(--gray-400);">/session</span></div>
@@ -1892,7 +1912,7 @@
                 
                 <div class="service-card fade-in">
                     <div class="service-badge">Most Popular</div>
-                    <div class="service-icon">💻</div>
+                    <div class="service-icon"></div>
                     <h3 class="service-title">Online Personal Training</h3>
                     <p class="service-description">Achieve Your Goals Anytime, Anywhere: Personalized Fitness at Your Fingertips. Global Opportunities: Discover exclusive workouts worldwide and achieve amazing results at great value!</p>
                     <div class="service-price">$682<span style="font-size: 1rem; color: var(--gray-400);">/2 months</span></div>
@@ -1908,7 +1928,7 @@
                 </div>
 
                 <div class="service-card fade-in">
-                    <div class="service-icon">🥗</div>
+                    <div class="service-icon"></div>
                     <h3 class="service-title">Custom Meal Plans</h3>
                     <p class="service-description">Ge8fit Meal Plan nourishes your body with foods you love. Enjoy our meal plans that include your favorite native dishes. They make healthy eating easy, enjoyable, and perfectly tailored to your fitness and wellness needs.</p>
                     <div class="service-price">Custom<span style="font-size: 1rem; color: var(--gray-400);">/pricing</span></div>
@@ -1935,7 +1955,7 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item fade-in">
-                    <div class="gallery-image">🏋️‍♂️</div>
+                    <div class="gallery-image"></div>
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h3>Strength Training Zone</h3>
@@ -1944,7 +1964,7 @@
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <div class="gallery-image">🤸‍♀️</div>
+                    <div class="gallery-image"></div>
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h3>Mobility & Flexibility Area</h3>
@@ -1953,7 +1973,7 @@
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <div class="gallery-image">🏃‍♂️</div>
+                    <div class="gallery-image"></div>
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h3>Cardio Training Zone</h3>
@@ -1962,7 +1982,7 @@
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <div class="gallery-image">👨‍🏫</div>
+                    <div class="gallery-image"></div>
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h3>Personal Training Sessions</h3>
@@ -1971,7 +1991,7 @@
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <div class="gallery-image">👥</div>
+                    <div class="gallery-image"></div>
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h3>Group Training Classes</h3>
@@ -1980,7 +2000,7 @@
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <div class="gallery-image">🏠</div>
+                    <div class="gallery-image"></div>
                     <div class="gallery-overlay">
                         <div class="gallery-info">
                             <h3>Home Training Setup</h3>
@@ -2069,39 +2089,22 @@
 
 
      <!-- Footer -->
+        <!-- Footer -->
+        <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="images/logo-trans-bg.png" alt="Ge8t Logo" class="logo-ge8"style="width: 100px; height: auto;">
+                        <img src="images/logo-trans-bg.png" alt="Gritforce8 Logo" class="logo-ge8" style="width: 100px; height: auto;">
                     </div>
-                    <p style="color: var(--gray-400); margin-bottom: 1rem;">Transforming lives through functional strength training since 1998. Abu Dhabi's premier personal training destination with over 6,800 successful client transformations.</p>
-<div style="color: var(--gray-400); font-size: 0.9rem;">
-    <p style="display: flex; align-items: center; gap: 8px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
-        </svg>
-        Abu Dhabi, UAE
-    </p>
-
-    <p style="display: flex; align-items: center; gap: 8px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M6.62 10.79a15.464 15.464 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/>
-        </svg>
-        +971 55 687 9614
-    </p>
-
-    <p style="display: flex; align-items: center; gap: 8px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-        </svg>
-        info@gritforce8.com
-    </p>
-</div>
-
+                    <p style="color: var(--gray-400); margin-bottom: 1rem;">Transforming lives through functional strength training since 1998. Abu Dhabi's premier personal training destination.</p>
+                    <div style="color: var(--gray-400); font-size: 0.9rem;">
+                        <p>Abu Dhabi, UAE</p>
+                        <p>+971 55 687 9614</p>
+                        <p>info@gritforce8.com</p>
+                    </div>
                 </div>
-
 
                 <div class="footer-section">
                     <h3>Client Categories</h3>
@@ -2113,10 +2116,8 @@
                         <li><a href="#about">Boxing Fitness</a></li>
                     </ul>
                 </div>
-                
 
-
-                <div class="footer-section">
+                <div class="footer-section footer-resources">
                     <h3>Resources</h3>
                     <ul>
                         <li><a href="#blog">Fitness Articles</a></li>
@@ -2124,46 +2125,22 @@
                         <li><a href="#services">Nutrition Tips</a></li>
                         <li><a href="#about">FAQ</a></li>
                         <li><a href="#contact">Free Assessment</a></li>
+                        <li><a href="documents/contact-us.pdf" target="_blank" rel="noopener" class="doc-link">Contact Us</a></li>
+                        <li><a href="documents/terms-and-conditions.pdf" target="_blank" rel="noopener" class="doc-link">Terms & Conditions</a></li>
+                        <li><a href="documents/privacy-policy.pdf" target="_blank" rel="noopener" class="doc-link">Privacy Policy</a></li>
+                        <li><a href="documents/refund-policy.pdf" target="_blank" rel="noopener" class="doc-link">Refund Policy</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2025 gritforce8. All Rights Reserved. | Empowering Abu Dhabi's fitness community since 1998 | 26+ Years of Excellence | 6,832+ Successful Transformations</p>
-<div class="footer-bottom">
-    <p>&copy; 2025 gritforce8. All Rights Reserved. | Empowering Abu Dhabi's fitness community since 1998 | 26+ Years of Excellence | 6,832+ Successful Transformations</p>
-    
-    <div class="social-links" style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.8rem;">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/people/Ge8fit-first/61569242152095/" class="social-link" target="_blank" aria-label="Facebook" style="color: inherit;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24h-1.917c-1.504 0-1.796.715-1.796 1.763v2.313h3.591l-.468 3.622h-3.123V24h6.127C23.407 24 24 23.407 24 22.676V1.325C24 .593 23.407 0 22.675 0z"/>
-            </svg>
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/ge8fit_first1/" class="social-link" target="_blank" aria-label="Instagram" style="color: inherit;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.057 1.97.246 2.427.415a4.92 4.92 0 011.675 1.09 4.92 4.92 0 011.09 1.675c.169.457.358 1.257.415 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.17-.246 1.97-.415 2.427a4.902 4.902 0 01-1.09 1.675 4.902 4.902 0 01-1.675 1.09c-.457.169-1.257.358-2.427.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.057-1.97-.246-2.427-.415a4.9 4.9 0 01-1.675-1.09 4.9 4.9 0 01-1.09-1.675c-.169-.457-.358-1.257-.415-2.427C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.057-1.17.246-1.97.415-2.427a4.92 4.92 0 011.09-1.675 4.92 4.92 0 011.675-1.09c.457-.169 1.257-.358 2.427-.415C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.17 0-3.548.012-4.796.069-1.008.046-1.555.213-1.917.355-.482.187-.83.41-1.195.775a3.08 3.08 0 00-.775 1.195c-.142.362-.309.909-.355 1.917-.057 1.248-.069 1.626-.069 4.796s.012 3.548.069 4.796c.046 1.008.213 1.555.355 1.917.187.482.41.83.775 1.195.365.365.713.588 1.195.775.362.142.909.309 1.917.355 1.248.057 1.626.069 4.796.069s3.548-.012 4.796-.069c1.008-.046 1.555-.213 1.917-.355.482-.187.83-.41 1.195-.775.365-.365.588-.713.775-1.195.142-.362.309-.909.355-1.917.057-1.248.069-1.626.069-4.796s-.012-3.548-.069-4.796c-.046-1.008-.213-1.555-.355-1.917a3.08 3.08 0 00-.775-1.195 3.08 3.08 0 00-1.195-.775c-.362-.142-.909-.309-1.917-.355-1.248-.057-1.626-.069-4.796-.069zm0 3.905a5.932 5.932 0 110 11.864 5.932 5.932 0 010-11.864zm0 9.8a3.868 3.868 0 100-7.736 3.868 3.868 0 000 7.736zm6.406-10.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
-            </svg>
-        </a>
-
-        <!-- YouTube -->
-        <a href="https://www.youtube.com/@Ge8fitfirst" class="social-link" target="_blank" aria-label="YouTube" style="color: inherit;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19.615 3.184A3.001 3.001 0 0122 6v12a3 3 0 01-2.385 2.816C17.454 21.454 12 21.5 12 21.5s-5.454-.046-7.615-.684A3.001 3.001 0 012 18V6a3 3 0 012.385-2.816C6.546 2.546 12 2.5 12 2.5s5.454.046 7.615.684zM10 8.5v7l6-3.5-6-3.5z"/>
-            </svg>
-        </a>
-
-        <!-- WhatsApp -->
-        <a href="https://web.whatsapp.com/send?phone=971556879614" class="social-link" target="_blank" aria-label="WhatsApp" style="color: inherit;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12c0 2.116.55 4.13 1.592 5.936L0 24l6.238-1.576A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.196-1.244-6.207-3.48-8.52zM12 22a9.94 9.94 0 01-5.068-1.383l-.363-.213-3.7.934.989-3.605-.237-.37A9.94 9.94 0 012 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.2-7.7c-.281-.14-1.657-.816-1.912-.909-.256-.093-.443-.14-.631.14-.187.28-.724.909-.888 1.096-.163.187-.325.21-.606.07-.281-.14-1.186-.437-2.26-1.394-.836-.746-1.4-1.667-1.564-1.947-.163-.28-.017-.43.123-.57.126-.125.281-.325.421-.487.14-.163.187-.28.28-.467.093-.187.047-.35-.023-.49-.07-.14-.631-1.522-.865-2.086-.228-.547-.46-.472-.631-.48l-.54-.01c-.187 0-.49.07-.748.35s-.98.957-.98 2.334 1.003 2.708 1.143 2.894c.14.187 1.976 3.018 4.787 4.23.67.29 1.194.464 1.603.594.673.214 1.283.184 1.767.112.539-.08 1.657-.677 1.891-1.33.233-.654.233-1.215.163-1.33-.07-.116-.256-.187-.537-.327z"/>
-            </svg>
-        </a>
-    </div>
-</div>
-
+                <p>&copy; 2025 gritforce8. All Rights Reserved.</p>
+                <div class="social-links" style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.8rem;">
+                    <a href="https://www.facebook.com/people/Ge8fit-first/61569242152095/" class="social-link" target="_blank" aria-label="Facebook" style="color: inherit;">Facebook</a>
+                    <a href="https://www.instagram.com/ge8fit_first1/" class="social-link" target="_blank" aria-label="Instagram" style="color: inherit;">Instagram</a>
+                    <a href="https://www.youtube.com/@Ge8fitfirst" class="social-link" target="_blank" aria-label="YouTube" style="color: inherit;">YouTube</a>
+                    <a href="https://web.whatsapp.com/send?phone=971556879614" class="social-link" target="_blank" aria-label="WhatsApp" style="color: inherit;">WhatsApp</a>
+                </div>
             </div>
         </div>
     </footer>
@@ -2172,14 +2149,25 @@
         // Loading Screen
         window.addEventListener('load', () => {
             const loading = document.getElementById('loading');
-            setTimeout(() => {
-                loading.classList.add('fade-out');
+            if (loading) {
                 setTimeout(() => {
-                    loading.style.display = 'none';
-                }, 100);
-            }, 500);
+                    loading.classList.add('fade-out');
+                    setTimeout(() => {
+                        loading.style.display = 'none';
+                    }, 100);
+                }, 500);
+            }
         });
 
+        
+        // Loader Failsafe
+        setTimeout(() => {
+            const loading = document.getElementById('loading');
+            if (loading) {
+                loading.classList.add('fade-out');
+                loading.style.display = 'none';
+            }
+        }, 3000);
         // Mobile Menu Toggle
         const mobileToggle = document.getElementById('mobileToggle');
         const navLinks = document.getElementById('navLinks');
@@ -2311,7 +2299,7 @@
 
         // Form Handling
         const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', function(e) {
+        if (contactForm) contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
             const formData = new FormData(contactForm);
@@ -2349,18 +2337,20 @@
             }, 3000);
         });
 
-        // Newsletter Form
-        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const emailInput = this.querySelector('input[type="email"]');
-            const email = emailInput.value;
-            
-            if (email) {
-                alert('Thank you for subscribing! You\'ll receive our latest fitness tips and exclusive offers.');
-                emailInput.value = '';
-            }
-        });
+                // Newsletter Form
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const emailInput = this.querySelector('input[type="email"]');
+                const email = emailInput ? emailInput.value : '';
 
+                if (email) {
+                    alert("Thank you for subscribing! You'll receive our latest fitness tips and exclusive offers.");
+                    emailInput.value = '';
+                }
+            });
+        }
         // Performance: Reduce animations on mobile
         if (window.innerWidth <= 768) {
             document.querySelectorAll('.floating-element').forEach(el => {
